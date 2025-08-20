@@ -11,6 +11,11 @@
       padding: 20px;
       text-align: center;
     }
+    img{
+        float: center;
+        width:100px; 
+        margin-right:15px;
+    }
     nav {
       background: #333;
       padding: 10px;
@@ -25,15 +30,21 @@
       text-decoration: underline;
     }
     .container {
-      width: 80%;
+      width: 50%;
       margin: 20px auto;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
     }
     article {
+      flex: 0 0 calc(50% - 20px);
       background: white;
-      padding: 20px;
-      margin-bottom: 20px;
+      padding: 5px;
       border-radius: 8px;
       box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+    article p {
+        font-size: small;
     }
     article h2 {
       margin-top: 0;
